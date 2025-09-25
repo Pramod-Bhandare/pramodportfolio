@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.menu>li>a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body{
 header{
     display: flex;
     /* width: 100%; */
-    background-color: green;
+    background-color: rgb(0, 152, 0);
     padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
@@ -21,12 +26,14 @@ header{
 
 .logo>p{
     font-size: 40px;
-    color: rgb(14, 2, 241);
+    /* padding: -10px; */
+    margin: -10px;
+    color: rgb(55, 33, 33);
 }
 
-.logo>p>span{
-    color: rgb(68, 68, 227);
-}
+/* .logo>p>span{
+    color: rgb(217, 161, 39);
+} */
 .menu{
     display: flex;
     gap: 20px;
@@ -39,7 +46,7 @@ header{
 }
 
 .menu>li>a:hover{
-    color: rgb(111, 73, 202);
+    color: rgb(0, 0, 0);
 }
 
 .whatsapp-floating{
