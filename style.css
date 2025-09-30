@@ -66,7 +66,8 @@ header{
 }
 
 #banner>img{
-    height: 30%;
+    height: 32%;
+    width: 11.5%;
     border-radius: 50%;
     box-shadow: 2px 3px 10px grey;
 }
@@ -225,5 +226,123 @@ footer{
     }
     #banner>img{
         margin-top: 200px;
+    }
+}
+
+
+
+
+
+
+
+/*Mobile devices*/
+@media screen and (max-width:576px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    #banner{
+        height: auto;
+        padding: 40px 10px;
+    }
+    #banner>img{
+        margin-top: 100px;
+        width: 40%;
+        height: auto;
+    }
+    #banner>h2{
+        font-size: 32px;
+        text-align: center;
+    }
+    #banner>h3{
+        font-size: 16px;
+        text-align: center;
+    }
+    #about{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .education{
+        width: 90%;
+    }
+    #projects{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 10px;
+    }
+    footer{
+        font-size: 16px;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width:577px) and (max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    #banner{
+        height: auto;
+        padding: 30px 15px;
+    }
+    #banner>img{
+        width: 25%;
+        height: auto;
+    }
+    #banner>h2{
+        font-size: 40px;
+    }
+    #projects{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    #about{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/*Laptops*/
+@media screen and (min-width:769px) and (max-width:1024px){
+    header{
+        padding: 15px 25px;
+    }
+    .menu{
+        gap: 15px;
+    }
+    #banner>img{
+        width: 15%;
+        height: auto;
+    }
+    #banner>h2{
+        font-size: 48px;
+    }
+    #projects{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+    #about{
+        flex-direction: row;
+        gap: 60px;
+    }
+}
+
+/*Large screens*/
+@media screen and (min-width:1025px){
+    #banner>img{
+        width: 10%;
+        height: auto;
+    }
+    #projects{
+        grid-template-columns: repeat(3,1fr);
     }
 }
